@@ -18,7 +18,7 @@ Ongoing progress:
 
 
 
-###### 1\. Initial Setup \& System Updates (**Completed**)
+### 1. Initial Setup & System Updates (**Completed**)
 
 
 
@@ -30,7 +30,7 @@ Network configuration and remote access setup via SSH.
 
 
 
-Package management: system updates and upgrades performed using apt update \&\& upgrade.
+Package management: system updates and upgrades performed using apt update && upgrade.
 
 
 
@@ -38,7 +38,7 @@ Package management: system updates and upgrades performed using apt update \&\& 
 
 
 
-###### 2\. Web Server Deployment (Nginx) (**Completed**)
+###### 2. Web Server Deployment (Nginx) (**Completed**)
 
 
 
@@ -54,7 +54,7 @@ Real-time troubleshooting and traffic analysis via Access Logs (/var/log/nginx/a
 
 
 
-###### 3\. User Management \& File Permissions (**Completed**)
+###### 3. User Management & File Permissions (**Completed**)
 
 
 
@@ -72,9 +72,11 @@ System Security: Implemented chmod to manage Read/Write/Execute permissions (e.g
 
 Process management and resource monitoring using htop.
 
+![monitoring resources using htop:](Screenshots/htop.PNG)
 
 
-###### 4\. Security \& Hardening (Firewall) (**Completed**)
+
+###### 4. Security & Hardening (Firewall) (**Completed**)
 
 
 
@@ -98,7 +100,7 @@ Default Policy -> Deny Incoming.
 
 
 
-###### 5\. Advanced Authentication (SSH Keys) (**Ongoing**)
+###### 5. Advanced Authentication (SSH Keys) (**Ongoing**)
 
 
 
