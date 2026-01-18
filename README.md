@@ -30,7 +30,11 @@ Network configuration and remote access setup via SSH.
 
 
 
-Package management: system updates and upgrades performed using apt update \&\& upgrade. 
+Package management: system updates and upgrades performed using apt update \&\& upgrade.
+
+
+
+!\[Initial startup; eventual download and upgrades](img/Setup-Upgrade.png)
 
 
 
@@ -103,10 +107,4 @@ Generating Public/Private key pairs.
 
 
 Disabling password-based login to prevent Brute Force attacks.
-
-
-
-
-
-
 
