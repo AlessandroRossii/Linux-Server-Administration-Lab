@@ -34,7 +34,7 @@ Package management: system updates and upgrades performed using apt update \&\& 
 
 
 
-!\[Initial startup; eventual download and upgrades](Screenshots/Setup-Upgrade.png)
+!\[Initial startup; eventual download and upgrades](Screenshots/Setup-Upgrade.PNG)
 
 
 
