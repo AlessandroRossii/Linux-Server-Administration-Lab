@@ -57,6 +57,8 @@ Port 80/443 (Web) -> Allowed.
 
 Default Policy -> Deny Incoming.
 
+![checking status of the UFW (uncomplicated Firewall):](Screenshots/status_ufw.PNG)
+
 
 ###### 5. Advanced Authentication (SSH Keys) (**Ongoing**)
 
