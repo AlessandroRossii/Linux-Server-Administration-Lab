@@ -20,7 +20,7 @@ Environment: Ubuntu Server 24.04.3 (Virtualised via VMware).
 * Network configuration and remote access setup via SSH.
 * Package management: system updates and upgrades performed using apt update \&\& upgrade.
 
-!\[Initial startup; eventual download and upgrades](Screenshots/Setup\_Upgrade.PNG)
+![Initial startup; eventual download and upgrades](Screenshots/Setup_Upgrade.PNG)
 
 
 
@@ -34,7 +34,7 @@ Environment: Ubuntu Server 24.04.3 (Virtualised via VMware).
 
 
 
-3. ##### User Management \& File Permissions (**Completed**)
+3. ##### User Management & File Permissions (**Completed**)
 
 
 
@@ -43,11 +43,11 @@ Environment: Ubuntu Server 24.04.3 (Virtualised via VMware).
 * System Security: Implemented chmod to manage Read/Write/Execute permissions (e.g., 600 for private files).
 * Process management and resource monitoring using htop.
 
-!\[monitoring resources using htop:](Screenshots/htop.PNG)
+![monitoring resources using htop:](Screenshots/htop.PNG)
 
 
 
-4. ##### Security \& Hardening (Firewall) (**Completed**)
+4. ##### Security & Hardening (Firewall) (**Completed**)
 
 
 
@@ -57,7 +57,7 @@ Environment: Ubuntu Server 24.04.3 (Virtualised via VMware).
 * Port 80/443 (Web) -> Allowed.
 * Default Policy -> Deny Incoming.
 
-!\[checking status of the UFW (uncomplicated Firewall):](Screenshots/status\_ufw.PNG)
+![checking status of the UFW (uncomplicated Firewall):](Screenshots/status_ufw.PNG)
 
 
 
@@ -80,8 +80,8 @@ Goal: Transition from password-based login to Asymmetric Key Encryption using th
 
 
 * Key Generation: Created a public/private key pair on the local host (Windows) using ssh-keygen -t ed25519.
-* Key Deployment: Transferred the public key to the server's authorized\_keys file using **ssh-copy-id**
-* Service Hardening: Modified /etc/ssh/sshd\_config to disable vulnerable access methods
+* Key Deployment: Transferred the public key to the server's authorized_keys file using **ssh-copy-id**
+* Service Hardening: Modified /etc/ssh/sshd_config to disable vulnerable access methods
 
  	PasswordAuthentication no
 
@@ -109,7 +109,7 @@ This command automates three steps:
 
 Creates the ~/.ssh directory on the server (if it doesn't already exist).
 
-Sets the correct permissions (700 for the directory, 600 for the authorized\_keys file).
+Sets the correct permissions (700 for the directory, 600 for the authorized_keys file).
 
 Appends your public key to the file without overwriting any existing keys.
 
@@ -147,7 +147,7 @@ for some reason SSH client (Windows) could not find the private key file in the 
 
 
 
-!\[Private key missing from the directory:](Screenshots/problem.PNG)
+![Private key missing from the directory:](Screenshots/problem.PNG)
 
 
 
@@ -155,7 +155,7 @@ I then found out that i generated keys inside the server LoL instead of the loca
 
 
 
-!\[Keys inside the host:](Screenshots/fixed\_host.PNG)
+![Keys inside the host:](Screenshots/fixed_host.PNG)
 
 
 
@@ -165,7 +165,7 @@ Incorrect permissions on .ssh or authorized\_keys prevented key reading. Enforce
 
 
 
-#### 6\. Future Steps:
+#### 6. Future Steps:
 
 * probably **Fail2Ban** Integration to automatically ban IP addresses that show malicious signs like too many failed connection attempts.
 * maybe add **HTTPS** cause as of now the server use http
