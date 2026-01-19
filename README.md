@@ -143,7 +143,7 @@ you won't log in direcly as root just because of a matter of Auditing. if multip
 
 
 
-for some reason SSH client (Windows) could not find the private key file in the local .ssh folder, so i tried to verify the path with ls $HOME\\.ssh\\ and ensured the correct naming.
+for some reason SSH client (Windows) could not find the private key file in the local .ssh folder, so i tried to verify the path with ls $HOME\.ssh\ and ensured the correct naming.
 
 
 
@@ -159,7 +159,7 @@ I then found out that i generated keys inside the server LoL instead of the loca
 
 
 
-Incorrect permissions on .ssh or authorized\_keys prevented key reading. Enforced chmod 700 for the directory and 600 for the file.
+Incorrect permissions on .ssh or authorized_keys prevented key reading. Enforced chmod 700 for the directory and 600 for the file.
 
 
 
