@@ -135,7 +135,7 @@ Why not leave it active as a backup? If you leave it enabled, you render the use
 
 ###### Disabling PermitRootLogin:
 
-this one is pretty much just to make an hacke life a bit harded. the root user exist in every server; forcing access through a standard user, a hacker would have to guess both the username and the key.
+this one is pretty much just to make an hacker's life a bit harder. the root user exist in every server; forcing access through a standard user, a hacker would have to guess both the username and the key.
 
 you won't log in direcly as root just because of a matter of Auditing. if multiple people manage a server, you want to know who did what
 
