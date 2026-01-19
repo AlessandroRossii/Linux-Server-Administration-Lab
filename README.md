@@ -20,7 +20,7 @@ Environment: Ubuntu Server 24.04.3 (Virtualised via VMware).
 * Network configuration and remote access setup via SSH.
 * Package management: system updates and upgrades performed using apt update \&\& upgrade.
 
-!\[Initial startup; eventual download and upgrades](Screenshots/Setup-Upgrade.PNG)
+!\[Initial startup; eventual download and upgrades](Screenshots/Setup\_Upgrade.PNG)
 
 
 
@@ -83,11 +83,11 @@ Goal: Transition from password-based login to Asymmetric Key Encryption using th
 * Key Deployment: Transferred the public key to the server's authorized\_keys file using **ssh-copy-id**
 * Service Hardening: Modified /etc/ssh/sshd\_config to disable vulnerable access methods
 
-&nbsp;	PasswordAuthentication no
+ 	PasswordAuthentication no
 
-&nbsp;	PubkeyAuthentication yes
+ 	PubkeyAuthentication yes
 
-&nbsp;	PermitRootLogin no
+ 	PermitRootLogin no
 
 
 
@@ -133,7 +133,7 @@ Why not leave it active as a backup? If you leave it enabled, you render the use
 
 this one is pretty much just to make an hacke life a bit harded. the root user exist in every server; forcing access through a standard user, a hacker would have to guess both the username and the key.
 
-you won't log in direcly as root just because of a matter of Auditing. if multiple people manage a server, you want to know who did what 
+you won't log in direcly as root just because of a matter of Auditing. if multiple people manage a server, you want to know who did what
 
 
 
@@ -155,7 +155,7 @@ I then found out that i generated keys inside the server LoL instead of the loca
 
 
 
-!\[Keys inside the host:](Screenshots/fixed-host.PNG)
+!\[Keys inside the host:](Screenshots/fixed\_host.PNG)
 
 
 
@@ -165,30 +165,7 @@ Incorrect permissions on .ssh or authorized\_keys prevented key reading. Enforce
 
 
 
-#### 6\. Future Steps: 
+#### 6\. Future Steps:
 
 * probably **Fail2Ban** Integration to automatically ban IP addresses that show malicious signs like too many failed connection attempts.
 * maybe add **HTTPS** cause as of now the server use http
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
